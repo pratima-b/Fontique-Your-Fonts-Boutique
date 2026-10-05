@@ -115,7 +115,7 @@ You can use the following format:
 
 ### Demo Video 🎥
 
-*Add your Fontique demo video link here.*
+[*Demo Video.*](https://drive.google.com/file/d/1JZrqOGZBXSYmbWFH9_sKfaAbUzKnIk28/view?usp=drivesdk)
 
 ---
 
