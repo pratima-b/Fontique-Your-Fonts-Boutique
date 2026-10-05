@@ -257,22 +257,6 @@ Fontique/
 
 ---
 
-## Security 🔐
-
-Fontique uses Firebase services for authentication and database functionality.
-
-Sensitive credentials should be stored using **Streamlit Secrets** instead of being hard-coded in the source code.
-
-The following files should **never be uploaded to GitHub**:
-
-```text
-.streamlit/secrets.toml
-*-firebase-adminsdk-*.json
-.env
-```
-
----
-
 ## Contributing 🤝
 
 Contributions and improvements are welcome!
