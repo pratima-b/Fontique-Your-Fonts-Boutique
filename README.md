@@ -1,4 +1,4 @@
-# Fontique — Your Fonts Boutique 🎨🔤
+# Fontique - Your Fonts Boutique 🎨🔤
 
 **"Discover the Perfect Font Pairings for Every Design!"**
 
@@ -80,42 +80,9 @@ The application is built using **Streamlit**, providing an interactive web inter
 
 ---
 
-## Screenshots and Demo 📸🎥
-
-### Application Screenshots
-
-*Add your Fontique screenshots here.*
-
-You can use the following format:
-
-```html
-<table>
-  <tr>
-    <td align="center">
-      <img src="images/home.png" alt="Fontique Home Screen" width="400"><br>
-      <b>Home Screen</b>
-    </td>
-    <td align="center">
-      <img src="images/fonts.png" alt="Font Discovery Screen" width="400"><br>
-      <b>Font Discovery</b>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="images/pairing.png" alt="Font Pairing Screen" width="400"><br>
-      <b>Font Pairing</b>
-    </td>
-    <td align="center">
-      <img src="images/recommendations.png" alt="Font Recommendations" width="400"><br>
-      <b>Recommendations</b>
-    </td>
-  </tr>
-</table>
-```
-
 ### Demo Video 🎥
 
-[*Demo Video.*](https://drive.google.com/file/d/1JZrqOGZBXSYmbWFH9_sKfaAbUzKnIk28/view?usp=drivesdk)
+[*Demo Video*](https://drive.google.com/file/d/1JZrqOGZBXSYmbWFH9_sKfaAbUzKnIk28/view?usp=drivesdk)
 
 ---
 
@@ -259,14 +226,14 @@ These criteria help create font combinations that are both visually appealing an
 
 ## Technologies & Tools 🛠️
 
-* **Python** — Core programming language
-* **Streamlit** — Interactive web application framework
-* **Pandas** — Data manipulation and analysis
-* **NumPy** — Numerical computing
-* **Pyrebase** — Firebase integration
-* **Firebase Authentication** — User authentication
-* **Cloud Firestore** — Database
-* **Git & GitHub** — Version control and project collaboration
+* **Python** - Core programming language
+* **Streamlit** - Interactive web application framework
+* **Pandas** - Data manipulation and analysis
+* **NumPy** - Numerical computing
+* **Pyrebase** - Firebase integration
+* **Firebase Authentication** - User authentication
+* **Cloud Firestore** - Database
+* **Git & GitHub** - Version control and project collaboration
 
 ---
 
@@ -350,6 +317,6 @@ For questions, feedback, or collaboration opportunities, feel free to connect wi
 
 ---
 
-**Fontique — Your Fonts Boutique** 🎨✨
+**Fontique - Your Fonts Boutique** 🎨✨
 
 *Discover. Pair. Design.*
