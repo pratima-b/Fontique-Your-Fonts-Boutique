@@ -1,0 +1,8 @@
+firebase_admin
+numpy
+pandas
+Pyrebase4
+Requests
+scikit_learn
+streamlit
+streamlit_option_menu
