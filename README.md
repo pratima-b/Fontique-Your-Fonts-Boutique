@@ -103,13 +103,13 @@ Before running Fontique, make sure you have:
 1. **Clone the repository:**
 
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/pratima-b/Fontique-Your-Fonts-Boutique
    ```
 
 2. **Navigate to the project directory:**
 
    ```bash
-   cd fontique-master
+   cd fontique-main
    ```
 
 3. **Create a virtual environment:**
