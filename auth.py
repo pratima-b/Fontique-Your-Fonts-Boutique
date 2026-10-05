@@ -6,16 +6,7 @@ import json
 from firebase_admin import firestore
 
 # Firebase configuration (replace with your own config)
-firebase_config = {
-    "apiKey": "AIzaSyC3v-XZ67A2K6ANHP9lrwk0Rnt15imWr50",
-    "authDomain": "fontiquee.firebaseapp.com",
-    "projectId": "fontiquee",
-    "databaseURL": "https://fontiquee-default-rtdb.firebaseio.com/",
-    "storageBucket": "fontiquee.appspot.com",
-    "messagingSenderId": "40632878954",
-    "appId": "1:40632878954:web:bbc03aa2e951e1cf17c713",
-    "measurementId": "G-9W51E8CVJ8"
-}
+firebase_config = dict(st.secrets["firebase"])
 
 # Initialize Pyrebase
 firebase = pyrebase.initialize_app(firebase_config)
@@ -23,7 +14,7 @@ auth = firebase.auth()
 
 # Firebase Admin SDK setup
 if not firebase_admin._apps:
-    cred = credentials.Certificate("fontiquee-firebase-adminsdk-nbqjr-ae8ff1a5c5.json")
+    cred = credentials.Certificate(dict(st.secrets["firebase_admin"]))
     firebase_admin.initialize_app(cred)
 
 # Initialize Firestore

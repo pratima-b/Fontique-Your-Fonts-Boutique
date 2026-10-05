@@ -1,0 +1,15 @@
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+
+# Firebase credentials
+*-firebase-adminsdk-*.json
+firebase-adminsdk*.json
+
+# IDE
+.vscode/
+.idea/
