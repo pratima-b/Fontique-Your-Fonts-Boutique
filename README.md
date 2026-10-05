@@ -1,58 +1,33 @@
-# Fontique — Your Fonts Boutique
+# Fontique — Your Fonts Boutique 🎨🔤
 
-Fontique is a font discovery and recommendation web application built with **Python and Streamlit**. It helps users explore fonts and discover font combinations based on contrast, compatibility, readability, and design mood.
+**"Discover the Perfect Font Pairings for Every Design!"**
 
-The application also provides **Firebase Authentication** for user registration and login, along with **Cloud Firestore** for backend data storage.
+Welcome to **Fontique**, an interactive font discovery and recommendation platform built with **Python and Streamlit**. Fontique helps designers, developers, and creators discover visually compatible font combinations based on **contrast, compatibility, readability, and design mood**.
 
-## Features
+Whether you're designing a website, mobile application, presentation, poster, or branding material, Fontique makes finding the right font combination easier and faster. ✨
 
-* Explore and discover fonts
-* Find complementary font combinations
-* Analyze font contrast and compatibility
-* Font recommendations based on visual characteristics
-* Font categories based on design moods
-* Support for multiple languages and scripts
-* Firebase email/password authentication
-* Cloud Firestore integration
-* Interactive Streamlit interface
+## Features 🎉
 
-## Tech Stack
+### 🔤 Font Discovery
 
-* **Python**
-* **Streamlit**
-* **NumPy**
-* **Pandas**
-* **Pyrebase**
-* **Firebase Authentication**
-* **Firebase Admin SDK**
-* **Cloud Firestore**
-* **Git & GitHub**
+* **Explore Fonts:** Browse and discover a wide variety of fonts.
+* **Font Pairing:** Find complementary font combinations suitable for different design requirements.
+* **Visual Recommendations:** Get font suggestions based on compatibility and contrast.
+* **Easy Exploration:** Interact with fonts through a simple and intuitive Streamlit interface.
 
-## Font Recommendation
+### 🎨 Font Compatibility
 
-Fontique evaluates font combinations using three main criteria:
+Fontique evaluates font combinations using three important design criteria:
 
-### Contrast
+* **Contrast:** Helps create visual distinction between paired fonts.
+* **Compatibility:** Identifies fonts that work well together.
+* **Readability:** Ensures that font combinations remain easy to read and visually balanced.
 
-Font pairs are categorized according to their visual contrast:
+### 🎭 Mood-Based Font Recommendations
 
-* Very Similar
-* Similar
-* Balanced Contrast
-* Moderate Contrast
-* High Contrast
+Choose a design mood and discover fonts that match your desired visual style.
 
-### Compatibility
-
-The application evaluates how well two fonts work together as a combination rather than simply selecting fonts that look different.
-
-### Readability
-
-Recommendations consider whether the selected font combination remains readable and practical for real-world design applications.
-
-## Font Moods
-
-Fontique supports different visual moods, including:
+Available moods include:
 
 * Casual
 * Elegant
@@ -66,143 +41,315 @@ Fontique supports different visual moods, including:
 * Futuristic
 * Neutral
 
-## Authentication
+### 🌐 Multilingual Font Support
 
-Fontique uses Firebase Authentication to provide:
+Fontique also explores fonts suitable for different writing systems and multilingual design requirements, including **Indian scripts**.
+
+This makes the platform useful for creating designs that require both aesthetic consistency and multilingual typography.
+
+### 📊 Data-Driven Recommendations
+
+Fontique uses font-pair data and similarity analysis to categorize font combinations into different contrast levels:
+
+* **Very Similar**
+* **Similar**
+* **Balanced Contrast**
+* **Moderate Contrast**
+* **High Contrast**
+
+The recommendation system is based on data-driven comparison of font characteristics.
+
+### 🔐 Firebase Authentication
+
+Fontique uses **Firebase Authentication** to provide user authentication and account management.
 
 * User registration
 * User login
-* User logout
-* Authentication session management
+* Email/password authentication
+* Secure Firebase-based authentication
 
-Cloud Firestore is used for application data storage.
+### ☁️ Cloud Firestore
 
-## Dataset
+Fontique uses **Cloud Firestore** for storing and managing application data.
 
-The application uses font-related datasets for its recommendation system.
+This allows the application to maintain user-related information and provide a cloud-connected experience.
 
-Example datasets include:
+### 💻 Interactive Streamlit Interface
 
-```text
-font_pairs_contrast_levels.csv
-google-fonts.csv
+The application is built using **Streamlit**, providing an interactive web interface without requiring a separate frontend framework.
+
+---
+
+## Screenshots and Demo 📸🎥
+
+### Application Screenshots
+
+*Add your Fontique screenshots here.*
+
+You can use the following format:
+
+```html
+<table>
+  <tr>
+    <td align="center">
+      <img src="images/home.png" alt="Fontique Home Screen" width="400"><br>
+      <b>Home Screen</b>
+    </td>
+    <td align="center">
+      <img src="images/fonts.png" alt="Font Discovery Screen" width="400"><br>
+      <b>Font Discovery</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="images/pairing.png" alt="Font Pairing Screen" width="400"><br>
+      <b>Font Pairing</b>
+    </td>
+    <td align="center">
+      <img src="images/recommendations.png" alt="Font Recommendations" width="400"><br>
+      <b>Recommendations</b>
+    </td>
+  </tr>
+</table>
 ```
 
-The font-pair dataset contains font combinations and their corresponding contrast categories.
+### Demo Video 🎥
 
-## Project Structure
+*Add your Fontique demo video link here.*
+
+---
+
+## Getting Started 🚀
+
+### Prerequisites
+
+Before running Fontique, make sure you have:
+
+* **Python 3.10 or later**
+* **pip**
+* **Git**
+* A **Firebase project**
+* **Streamlit**
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone <your-repository-url>
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd fontique-master
+   ```
+
+3. **Create a virtual environment:**
+
+   ```bash
+   python -m venv .venv
+   ```
+
+4. **Activate the virtual environment:**
+
+   **Windows:**
+
+   ```bash
+   .venv\Scripts\activate
+   ```
+
+   **macOS/Linux:**
+
+   ```bash
+   source .venv/bin/activate
+   ```
+
+5. **Install the required dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+6. **Configure Firebase credentials** using Streamlit secrets.
+
+7. **Run the application:**
+
+   ```bash
+   streamlit run app.py
+   ```
+
+The application will then open in your browser. 🌐
+
+---
+
+## Architecture 🏗️
+
+Fontique follows a data-driven application architecture combining a **Streamlit frontend**, **Python-based recommendation logic**, and **Firebase backend services**.
+
+### Application Flow
+
+```text
+User
+  ↓
+Streamlit Interface
+  ↓
+Font Selection / Preferences
+  ↓
+Font Recommendation Logic
+  ↓
+Font Pairing & Compatibility Analysis
+  ↓
+Recommended Font Combinations
+  ↓
+Firebase / Firestore
+```
+
+### Core Components
+
+* **Streamlit:** User interface and application framework
+* **Python:** Core application and recommendation logic
+* **Pandas:** Dataset processing and analysis
+* **NumPy:** Numerical and similarity calculations
+* **Firebase Authentication:** User authentication
+* **Cloud Firestore:** Cloud database
+* **Font Dataset:** Font pairing and compatibility information
+
+---
+
+## Dataset 📊
+
+Fontique uses font datasets to support its recommendation system.
+
+### Font Pair Dataset
+
+`font_pairs_contrast_levels.csv`
+
+This dataset contains font-pair information along with their corresponding contrast categories.
+
+Contrast categories include:
+
+* Very Similar
+* Similar
+* Balanced Contrast
+* Moderate Contrast
+* High Contrast
+
+### Google Fonts Dataset
+
+`google-fonts.csv`
+
+This dataset contains information related to available Google Fonts used by the application.
+
+---
+
+## Recommendation Criteria 🎯
+
+Fontique focuses on three major principles when recommending font combinations:
+
+| Criteria          | Purpose                                      |
+| ----------------- | -------------------------------------------- |
+| **Contrast**      | Creates visual distinction between fonts     |
+| **Compatibility** | Determines whether fonts work well together  |
+| **Readability**   | Ensures the combination remains easy to read |
+
+These criteria help create font combinations that are both visually appealing and practical for real-world design.
+
+---
+
+## Technologies & Tools 🛠️
+
+* **Python** — Core programming language
+* **Streamlit** — Interactive web application framework
+* **Pandas** — Data manipulation and analysis
+* **NumPy** — Numerical computing
+* **Pyrebase** — Firebase integration
+* **Firebase Authentication** — User authentication
+* **Cloud Firestore** — Database
+* **Git & GitHub** — Version control and project collaboration
+
+---
+
+## Project Structure 📁
 
 ```text
 Fontique/
 │
 ├── app.py
 ├── requirements.txt
-├── README.md
 ├── .gitignore
 │
-├── .streamlit/
-│   └── secrets.toml
+├── font_pairs_contrast_levels.csv
+├── google-fonts.csv
 │
-└── data/
-    ├── font_pairs_contrast_levels.csv
-    └── google-fonts.csv
+└── .streamlit/
+    └── secrets.toml
 ```
 
-The exact structure may vary depending on the current version of the project.
+> **Note:** `secrets.toml` contains private Firebase credentials and should never be committed to GitHub.
 
-## Installation
+---
 
-### 1. Clone the repository
+## Security 🔐
 
-```bash
-git clone https://github.com/pratima-b/Fontique-Your-Fonts-Boutique.git
-```
+Fontique uses Firebase services for authentication and database functionality.
 
-### 2. Open the project
+Sensitive credentials should be stored using **Streamlit Secrets** instead of being hard-coded in the source code.
 
-```bash
-cd Fontique-Your-Fonts-Boutique
-```
-
-### 3. Create a virtual environment
-
-Windows:
-
-```powershell
-python -m venv .venv
-```
-
-Activate the environment:
-
-```powershell
-.venv\Scripts\Activate.ps1
-```
-
-### 4. Install dependencies
-
-```powershell
-pip install -r requirements.txt
-```
-
-## Firebase Configuration
-
-Fontique uses Firebase for authentication and backend services.
-
-Firebase configuration should be stored using Streamlit secrets:
+The following files should **never be uploaded to GitHub**:
 
 ```text
 .streamlit/secrets.toml
-```
-
-**Do not commit this file to GitHub.**
-
-Firebase Admin SDK service-account JSON files should also never be uploaded to the repository.
-
-## Run the Application
-
-Start Fontique using:
-
-```powershell
-streamlit run app.py
-```
-
-The application will normally be available at:
-
-```text
-http://localhost:8501
-```
-
-## Security
-
-The following files should never be committed to GitHub:
-
-```text
-.streamlit/secrets.toml
-.env
 *-firebase-adminsdk-*.json
+.env
 ```
 
-These files may contain sensitive credentials.
+---
 
-## Future Development
+## Contributing 🤝
 
-Potential improvements include:
+Contributions and improvements are welcome!
 
-* Improved font recommendation algorithms
-* More multilingual font support
-* Advanced font similarity analysis
-* Personalized font recommendations
-* Additional typography categories
-* Improved UI/UX
-* More font datasets
-* Deployment improvements
+To contribute:
 
-## Author
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Test the application.
+5. Commit your changes.
+6. Create a Pull Request.
 
-**Pratima Bombe**
+---
 
-GitHub: https://github.com/pratima-b
+## Future Improvements 🚀
 
-## License
+Some potential future improvements for Fontique include:
 
-This project is intended for educational and development purposes.
+* 🤖 AI-powered font recommendations
+* 📈 Advanced font similarity visualization
+* 🧠 Machine-learning-based font pairing
+* 🔎 More advanced search and filtering
+* 🌍 Expanded multilingual font support
+* 🎨 Live font preview and comparison
+* 📱 Improved responsive design
+* ☁️ Enhanced cloud-based user preferences
+
+---
+
+## License 📄
+
+This project is licensed under the **MIT License**.
+
+See the `LICENSE` file for more information.
+
+---
+
+## Contact 📬
+
+For questions, feedback, or collaboration opportunities, feel free to connect with the project contributors through GitHub.
+
+---
+
+**Fontique — Your Fonts Boutique** 🎨✨
+
+*Discover. Pair. Design.*
